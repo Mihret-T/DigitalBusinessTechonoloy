@@ -1,0 +1,286 @@
+html,
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    margin: 0;
+    /* border: #333 1px solid; */
+}
+
+.normal-text {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.text-large {
+    font-size: 28px;
+}
+
+.text-larger {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-image: url('../imgs/bg-img2.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+/* .slides {display: none;} */
+
+.slider>div {
+    margin-left: 5%;
+    width: 45%;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:active{
+    background-color: #333;
+}
+
+.btn-group {
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: none;
+}
+
+.btn-transparent {
+    background-color: white;
+}
+
+.btn-outlined {
+    color: black;
+    background-color: #FFD700;
+}
+
+.container {
+    margin: 5% 10%;
+}
+
+.statement {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.statement .grid-item-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 5px 15% 5px 0px;
+}
+
+/* .grid-item-right{
+    border: #FFD700 solid 1px;
+} */
+
+.statement .grid-item-right img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.statement .statement2 p {
+    margin: 10px;
+}
+
+.container2 {
+    margin: 5% 0;
+    background-color: #333;
+    opacity: 0.8;
+    color: white;
+}
+
+.container2 .text-larger {
+    color: #FFD700;
+}
+
+.statement2 {
+    margin: 5% 10%;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.statement2 .grid-item-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.statement2 .grid-item-left {
+    margin-right: 10%;
+}
+
+
+/* Services */
+.services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 60vh;
+    margin: 10vh 0;
+    align-items: center;
+}
+
+.services .flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5% 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.services .flex-item .text-large {
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.services .flex-item .icon {
+    align-self: center;
+}
+
+
+.services .material-icons {
+    font-size: 200px;
+    color: #FFD700;
+    font-size: 45px;
+}
+
+.services p {
+    margin: 5px 0;
+}
+
+hr {
+    display: block;
+    float: left;
+    width: 40%;
+    color: #FFD700;
+}
+
+
+/* Mobile view */
+@media screen and (max-width: 600px) {
+    .header .contact-info {
+        display: none;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .normal-text {
+        font-size: 12px;
+    }
+
+    .text-large {
+        font-size: 18px;
+    }
+
+    .text-larger {
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
+
+
+/*
+.flex-container2>div {
+    margin: 10px;
+    font-size: 30px;
+}
+ */
+
+
+
+/* .navbar {
+    padding: 10px 5%;
+    border-bottom: black 1px solid;
+}
+
+.navbar li {
+    display: inline;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bolder;
+} */
+
+/* .navbar{
+    background-image: url('./imgs/bg-img3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    margin: 0;
+}
+ */
+
+/* .top-navbar li {
+    display: inline;
+    list-style: none;
+    padding: 20px;
+}
+
+.top-navbar {
+    width: fit-content; */
+/* margin: auto; */
+/* padding-top: 25px;
+}
+
+.top-navbar a:hover {
+    background-color: #FFD700;
+    color: black;
+    font-weight: bolder;
+}
+
+.top-navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+} */

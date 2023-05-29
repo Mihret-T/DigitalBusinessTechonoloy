@@ -1,0 +1,41 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wrapper div {
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+.title-section {}
+
+.image-section img {
+    height: 500px;
+    width: 500px;
+}
+
+.content-section {
+    padding: 0vh 10vh;
+}
+
+.content-section h4 {
+    text-align: justify;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.content-section p {
+    text-align: justify;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}

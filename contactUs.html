@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LUHEM Interior Designs</title>
+    <link rel="stylesheet" href="./styles/headerFooter.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./contact.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./aboutUs.html">About Us</a>
+        <a href="./services.html">Services</a>
+        <a href="./portifolio.html">Protifolio</a>
+        <a href="./contactUs.html">Contacts</a>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="form">
+                <h3>Send us a message</h3>
+                <p>If you have any work for us or any type of quies related to our work, please send us a message here.
+                </p>
+                <div class="alert" id="alertBox">
+                    <strong>Email Successfully Sent</strong>
+                  </div>
+
+                  <div class="alert" id="error">
+                    <strong>Please make sure you have filled all inputs</strong>
+                  </div>
+
+                <form method="POST" id="myForm">
+                    <div class="input-box">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" autocomplete="off">
+                        <!-- <small id="nameError">Please enter your name</small> -->
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Your Email</label>
+                        <input type="text" id="email" placeholder="Enter your email" autocomplete="off">
+                        <!-- <small id="emailError">Please enter a valid email address</small> -->
+                    </div>
+                    
+                    <div class="input-box message-box">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Enter something..." autocomplete="off"></textarea>
+                        <!-- <small  id="nameError">Please enter your message</small> -->
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Submit" onclick="sendEmail()">
+                    </div>
+                </form>
+            </div>
+
+            <div class="image-section">
+                <img src="./imgs/side-img3.jpg">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <div class="contact">
+            <div class="icon">
+                <i class="material-icons">place</i>
+            </div>
+            <div>
+                <p class="sub-title">ADDRESS</p>
+                <p class="normal-text">1480 Folsom St</p>
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="icon">
+                <i class="material-icons">call</i>
+            </div>
+            <div>
+                <p class="sub-title">CALL US</p>
+                <p class="normal-text">+1-202-555-0148</p>
+            </div>
+    
+        </div>
+    
+        <div class="content">
+            <div class="icon">
+                <i class="material-icons">mail</i>
+            </div>
+            <div>
+                <p class="sub-title">EMAIL US</p>
+                <p class="normal-text">office@addison.com</p>
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <div class="footer">
+        <div class="statement">
+            <h3>Let's design together</h3>
+            <!-- <hr> -->
+            <p>
+                One of the reasons we became interior designers in the first place was because we love collecting and
+                then putting it all together. But when you’re designing your own house, the hardest thing is to finish
+                it, as you’re always adding your next favourite thing, and finally there’s no space left.
+            </p>
+            <div class="btn-group">
+                <button class="btn btn-outlined">Learn More</button>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h3>Contact</h3>
+            <!-- <hr> -->
+            <div>
+                <p><i class="material-icons">place</i>Bole, Addis Ababa</p>
+                <p><i class="material-icons">phone</i>+251 912 345 678</p>
+                <p><i class="material-icons">phone</i>+251 912 345 678</p>
+                <p><i class="material-icons">email</i>primaryemail@gmail.com</p>
+                <p><i class="material-icons">email</i>secondaryemail@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="social">
+            <h3>Social</h3>
+            <div>
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-youtube-square" aria-hidden="true"></i>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-outlined">Visit Us</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-footer">
+        <p>Copyright by Luhem Plc. All rights reserved. </p>
+        <p>Published: May 26th 2023</p>
+
+    </div>
+</body>
+
+</html>
